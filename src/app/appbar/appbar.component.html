@@ -1,0 +1,17 @@
+<header class="header">
+  <ul class="list">
+    <li class="item" *ngFor="let currency of cur">
+      <span class="currency">{{ currency.ccy }}: </span>
+      <div class="innerContainer">
+        <span class="operation">
+          Sells for: {{ currency.sale }} <span class="uah">uah</span></span
+        >
+        <span class="separator">/</span>
+        <span class="operation">
+          Buys for:
+          {{ currency.buy }} <span class="uah">uah</span>
+        </span>
+      </div>
+    </li>
+  </ul>
+</header>
