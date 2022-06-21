@@ -1,15 +1,13 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
+import { Component, EventEmitter, Input, Output } from '@angular/core'
 
 import { CurrencyService } from 'src/app/shared/currency.service'
-
-import { CurrencyI } from 'src/app/shared/currency.service'
 
 @Component({
   selector: 'app-exchanger-card',
   templateUrl: './exchange-card.component.html',
   styleUrls: ['./exchange-card.component.scss'],
 })
-export class ExchangerCardComponent implements OnInit {
+export class ExchangerCardComponent {
   constructor(private cs: CurrencyService) {}
 
   @Input() selectedCurrency = ''
@@ -22,9 +20,5 @@ export class ExchangerCardComponent implements OnInit {
 
   showCur(): void {
     console.log(this.amount)
-  }
-
-  ngOnInit(): void {
-    console.log('dsf')
   }
 }

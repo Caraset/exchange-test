@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 import { map } from 'rxjs'
 import { CurrencyService } from '../shared/currency.service'
 
