@@ -1,0 +1,23 @@
+<div class="card">
+  <select
+    class="select"
+    name="currency"
+    id="currency"
+    (change)="changeCurrency.emit($event)">
+    <option class="option" [ngValue]="selectedCurrency">
+      {{ selectedCurrency }}
+    </option>
+    <option
+      class="option"
+      *ngFor="let code of currenciesCodes"
+      [ngValue]="code">
+      {{ code }}
+    </option>
+  </select>
+  <input
+    class="input"
+    type="number"
+    min="0"
+    [value]="amount"
+    (input)="changeAmount.emit($event)" />
+</div>

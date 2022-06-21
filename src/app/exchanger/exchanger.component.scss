@@ -1,0 +1,27 @@
+.container {
+  padding: 20rem 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 780px) {
+    flex-direction: row;
+  }
+}
+
+.btn {
+  padding: 0.2rem 0.4rem;
+  margin: 2rem 0;
+  color: var(--main-text-color);
+  background-color: transparent;
+
+  border-radius: 0.6rem;
+  border: 1px solid var(--main-text-color);
+  cursor: pointer;
+
+  @media screen and (min-width: 780px) {
+    margin: 0 2rem;
+  }
+}

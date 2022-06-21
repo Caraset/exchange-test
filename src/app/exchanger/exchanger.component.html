@@ -1,0 +1,19 @@
+<div class="container">
+  <app-exchanger-card
+    [amount]="fromAmount"
+    [selectedCurrency]="fromCurrency"
+    [oppositeCurrency]="toCurrency"
+    [currenciesCodes]="fromCurrenciesCodes"
+    (changeAmount)="setFromAmount($event)"
+    (changeCurrency)="setFromCurrency($event)"
+    (showEv)="showAmount()"></app-exchanger-card>
+  <button class="btn" (click)="swapCurr()">switch</button>
+  <app-exchanger-card
+    [amount]="toAmount"
+    [selectedCurrency]="toCurrency"
+    [oppositeCurrency]="fromCurrency"
+    [currenciesCodes]="toCurrenciesCodes"
+    (changeAmount)="setToAmount($event)"
+    (changeCurrency)="setToCurrency($event)"
+    (showEv)="showAmount()"></app-exchanger-card>
+</div>
